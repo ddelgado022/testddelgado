@@ -12,20 +12,28 @@ namespace MyWebApp.Controllers
     {
         public async Task<IActionResult> Index()
         {
-            List<Reservation> reservationList = new List<Reservation>();
-            using (var httpClient = new HttpClient())
+            try
             {
-                //using (var response = await httpClient.GetAsync("http://ss-pre.caas.intel.com/api/SpaceStandard"))
-                using (var response = await httpClient.GetAsync("https://www.7timer.info/bin/astro.php?lon=113.2&lat=23.1&ac=0&unit=metric&output=json&tzshift=0"))
+                List<Reservation> reservationList = new List<Reservation>();
+                using (var httpClient = new HttpClient())
                 {
-                    string apiResponse = await response.Content.ReadAsStringAsync();
-                    apiResponse = "[" + apiResponse + "]";
+                    using (var response = await httpClient.GetAsync("http://ss-pre.caas.intel.com/api/SpaceStandard"))
+                    // using (var response = await httpClient.GetAsync("https://www.7timer.info/bin/astro.php?lon=113.2&lat=23.1&ac=0&unit=metric&output=json&tzshift=0"))
+                    {
+                        string apiResponse = await response.Content.ReadAsStringAsync();
+                        //    apiResponse = "[" + apiResponse + "]";
 
-                    reservationList = JsonConvert.DeserializeObject<List<Reservation>>(apiResponse);
-                    
+                        reservationList = JsonConvert.DeserializeObject<List<Reservation>>(apiResponse);
+
+                    }
                 }
+                return View(reservationList);
             }
-            return View(reservationList);
+            catch(System.Exception ex)
+            {
+                throw ex;
+
+            }
         }
     }
 }

@@ -9,7 +9,7 @@ namespace MyWebApp.Models
     {
 
         //public string specificationControlNumber { get; set; }
-        public string timepoint { get; set; }
+        public string specificationControlNumber { get; set; }
 
     }
 }
