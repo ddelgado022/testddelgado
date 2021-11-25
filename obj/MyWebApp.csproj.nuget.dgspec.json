@@ -1,29 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ddelgado/Desktop/netddelgado/MyWebApp/MyWebApp.csproj": {}
+    "C:\\Users\\ddelgado\\OneDrive - Intel Corporation\\Desktop\\testddelgado\\MyWebApp.csproj": {}
   },
   "projects": {
-    "/Users/ddelgado/Desktop/netddelgado/MyWebApp/MyWebApp.csproj": {
+    "C:\\Users\\ddelgado\\OneDrive - Intel Corporation\\Desktop\\testddelgado\\MyWebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ddelgado/Desktop/netddelgado/MyWebApp/MyWebApp.csproj",
+        "projectUniqueName": "C:\\Users\\ddelgado\\OneDrive - Intel Corporation\\Desktop\\testddelgado\\MyWebApp.csproj",
         "projectName": "MyWebApp",
-        "projectPath": "/Users/ddelgado/Desktop/netddelgado/MyWebApp/MyWebApp.csproj",
-        "packagesPath": "/Users/ddelgado/.nuget/packages/",
-        "outputPath": "/Users/ddelgado/Desktop/netddelgado/MyWebApp/obj/",
+        "projectPath": "C:\\Users\\ddelgado\\OneDrive - Intel Corporation\\Desktop\\testddelgado\\MyWebApp.csproj",
+        "packagesPath": "C:\\Users\\ddelgado\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ddelgado\\OneDrive - Intel Corporation\\Desktop\\testddelgado\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/ddelgado/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\ddelgado\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -35,6 +38,13 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -53,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

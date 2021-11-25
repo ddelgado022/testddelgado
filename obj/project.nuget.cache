@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ryw6zTQjCVOhrZsgix64xJUU/8cP5tlULKev/NX18TDolBQ/XN+iNpFiKdy4EXThRMqLRgBvFaRosoA09MzrIQ==",
+  "dgSpecHash": "okMXSAziwbsWONLci/dpTZ69VRPz4CUrXluk4I8JkBNeng0VD+B24O4MfZAKtw1E5Z5Zo2Pv/jfqFQtos/ypJA==",
   "success": true,
-  "projectFilePath": "/Users/ddelgado/Desktop/netddelgado/MyWebApp/MyWebApp.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\ddelgado\\OneDrive - Intel Corporation\\Desktop\\testddelgado\\MyWebApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ddelgado\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
